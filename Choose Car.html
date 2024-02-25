@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Car</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="Choose Car.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1 class="title1">Choose Your</h1>
+            <h1 class="title2"> Favourite Car</h1>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper car-list">
+                <div class="swiper-slide car" id="car3">
+                    <a href="toyota_supra.html">
+                        <img src="./img/Tsmk.jpg" alt="Toyota Supra Mk5">
+                    </a>
+                    <div class="car-info">
+                        <h2>Toyota Supra Mk5</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide car" id="car1">
+                    <a href="911gt.html">
+                        <img src="./img/car1_image.JPG" alt="911 GT3 RS">
+                    </a>
+                    <div class="car-info">
+                        <h2>Porsche 911 GT3 RS </h2>
+                    </div>
+                </div>
+                <div class="swiper-slide car" id="car2">
+                    <a href="#nissan_skyline_page">
+                        <img src="./img/car2_image.jpg" alt="Nissan Skyline GT-R R32">
+                    </a>
+                    <div class="car-info">
+                        <h2>Nissan Skyline GT-R</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            initialSlide: 1, // Start with the second car
+            slidesPerView: 'auto',
+            spaceBetween: 10
+        });
+    </script>
+</body>
+</html>

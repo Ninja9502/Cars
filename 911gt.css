@@ -1,0 +1,100 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0; /* Remove default body margin */
+}
+
+.container {
+    max-width: 100%; /* Adjusted to make it full-width */
+    padding: 0; /* Remove padding */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.car-name {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.car-image {
+    text-align: center;
+    margin-bottom: 20px;
+    overflow: hidden; /* Ensure no overflow */
+    position: relative; /* Make it a reference for absolute positioning */
+}
+
+.car-image img {
+    width: 100%; /* Adjusted to make the image full-width */
+    height: auto;
+    display: block; /* Remove default inline display */
+    margin-top: -20px; /* Adjusted to remove the white space */
+}
+
+.car-details {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-description {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.car-specs {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.car-specs-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.car-specs-list li {
+    margin-bottom: 5px;
+}
+
+.car-price {
+    font-size: 1.2rem;
+}
+
+.price-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.price {
+    color: #27ae60;
+}
+
+/* Positioning adjustments */
+.back-button {
+    position: absolute;
+    top: 10px; /* Adjusted for a bit more top spacing */
+    left: 10px; /* Adjusted for a bit more left spacing */
+    z-index: 1; /* Ensure it's above the image */
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+    transition: text-shadow 0.3s; /* Transition for the text-shadow */
+}
+
+/* Glowing effect on hover for the word "Back" */
+.back-button:hover {
+    text-shadow: 0 0 10px rgba(169, 169, 169, 0.8); /* Metallic gray color */
+}
+
